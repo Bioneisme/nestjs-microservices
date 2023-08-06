@@ -17,4 +17,9 @@ export class OrdersController {
   async getOrders() {
     return this.ordersService.getOrders();
   }
+
+  @Get('health')
+  async healthCheck() {
+    return 'OK';
+  }
 }

@@ -8,4 +8,5 @@ async function bootstrap() {
   app.connectMicroservice(rmqService.getOptions('BILLING'));
   await app.startAllMicroservices();
 }
+
 bootstrap();
